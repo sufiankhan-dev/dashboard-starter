@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
@@ -22,8 +21,7 @@ function SignOut() {
   };
 
   return (
-    <Button onClick={handleSignOut} disabled={isLoading}>
-      {isLoading && <Loader2 className="animate-spin" />}
+    <Button onClick={handleSignOut} disabled={isLoading} loading={isLoading}>
       Sign Out
     </Button>
   );
