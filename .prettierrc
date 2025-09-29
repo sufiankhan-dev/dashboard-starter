@@ -1,0 +1,5 @@
+{
+  "singleQuote": false,
+  "formatOnSave": true,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
