@@ -164,8 +164,13 @@ export function SignUpForm({
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
-                <Button type="submit" className="w-full" disabled={isLoading}>
-                  {isLoading ? "Creating account..." : "Create account"}
+                <Button
+                  type="submit"
+                  className="w-full"
+                  disabled={isLoading}
+                  loading={isLoading}
+                >
+                  Create account
                 </Button>
               </div>
               <div className="text-center text-sm">

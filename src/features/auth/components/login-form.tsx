@@ -146,8 +146,13 @@ export function LoginForm({
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
-                <Button type="submit" className="w-full" disabled={isLoading}>
-                  {isLoading ? "Logging in..." : "Login"}
+                <Button
+                  type="submit"
+                  className="w-full"
+                  disabled={isLoading}
+                  loading={isLoading}
+                >
+                  Login
                 </Button>
               </div>
               <div className="text-center text-sm">
